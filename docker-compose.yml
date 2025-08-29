@@ -1,7 +1,7 @@
 
 services:
   zookeeper:
-    image: bitnami/zookeeper:3.8
+    image: bitnamilegacy/zookeeper:3.8
     container_name: zookeeper
     ports:
       - "2181:2181"
@@ -9,7 +9,7 @@ services:
       ALLOW_ANONYMOUS_LOGIN: yes
 
   kafka:
-    image: bitnami/kafka:latest
+    image: bitnamilegacy/kafka:3.4.0-debian-11-r0
     container_name: kafka
     ports:
       - "9092:9092"
